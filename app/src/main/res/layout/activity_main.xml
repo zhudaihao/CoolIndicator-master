@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="标题"
+        android:textSize="16sp" />
+
+    <cn.zdh.progresslibrary.CoolIndicator
+        android:id="@+id/indicator"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/tv_title"
+        android:progressDrawable="@drawable/default_drawable_indicator" />
+
+    <com.just.library.AgentWebView
+        android:id="@+id/agentWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/indicator"
+        android:scrollbars="none" />
+
+</RelativeLayout>
